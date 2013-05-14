@@ -1,0 +1,104 @@
+<html>
+<head>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="options.js" type="text/javascript"></script>
+    <style type="text/css">
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    input[type="text"], button {
+        background: #eee;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-right: 8px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    input[type="text"]:focus {
+	border: 1px solid #ccc;
+	background: #fff;
+    outline: none;
+	}
+
+    #add-button {
+        background: #fff;
+        border: 1px dashed #ccc;
+    }
+    
+    #add-button:hover, #add-button:focus {
+        border: 1px dashed #bbb;
+        background: #eee;
+    }
+
+    button {
+        margin: 0px;
+    }
+
+    button:hover, button:focus {
+	border: 1px solid #bbb;
+	background: #e5e5e5;
+	}
+
+    input[type="text"], #add-button {
+        width: 200px;
+        padding: 4px;
+    }
+    
+    li {
+        width: 235px;
+    }
+
+    .del-button {
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 16px;
+        color: #333;
+    }
+
+    h2 {
+        margin-top: 30px;
+        font-size: 15px;
+        color: #333;
+    }
+    p,footer {
+        font-size: 10px;
+        color: #666;
+    }
+
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        border-top: 1px solid #eee;
+        padding: 4px;
+    }
+
+    body {
+        margin: 10px auto;
+        width: 300px;
+    }
+    html {
+        padding: 10px;
+        background: #fff;
+    }
+    </style>
+</head>
+<body>
+    <h1>人人新鲜事过滤器</h1>
+    <p>帮助你过滤掉不想看到的新鲜事</p>
+    <h2>规则列表</h2>
+    <ul id="rules-list">
+    </ul>
+    <div>
+        <button id="add-button"> + </button>
+    </div>
+    <p>新鲜事标题及显示的正文中若含有以上内容将被过滤</p>
+    <button id="save-button"> save </button>
+</body>
+</html>
+

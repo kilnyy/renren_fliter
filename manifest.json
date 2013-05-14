@@ -1,0 +1,28 @@
+{
+    "name": "Renren Filter",
+    "description": "Remove feed-news you do not want to see.",
+    "version": "1.0",
+    "icons": {"128": "R.png"},
+    "web_accessible_resources": ["on.png", "off.png", "hint.css"],
+    "background": { 
+        "scripts": ["background.js"]
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        { 
+            "matches": ["http://www.renren.com/*"],
+            "js": ["jquery.js", "content.js"]
+        }
+    ],
+
+    "permissions": [
+        "tabs",
+        "http://www.renren.com/*"
+    ],
+    "page_action": {
+        "default_name": "renren_filter",
+        "default_icon": "R.png",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
